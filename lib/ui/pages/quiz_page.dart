@@ -128,6 +128,7 @@ class _QuizPageState extends State<QuizPage> {
     }
   }
 
+  // type of error message for exam in app
   Future<bool> _onWillPop() async {
     return showDialog<bool>(
         context: context,

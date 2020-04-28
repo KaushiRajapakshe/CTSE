@@ -5,7 +5,7 @@ class ErrorPage extends StatelessWidget {
 
   const ErrorPage({Key key, this.message = "There was an unknown error." }) : super(key: key);
 
-  // error handle when user can not be connect to internet
+  // error handle when user can not be reach
   @override
   Widget build(BuildContext context){
     return Scaffold(

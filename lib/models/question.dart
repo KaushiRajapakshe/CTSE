@@ -19,6 +19,7 @@ class Question {
 
   Question({this.categoryName, this.type, this.difficulty, this.question, this.correctAnswer, this.incorrectAnswers});
 
+  //question data mapping to get data
   Question.fromMap(Map<String, dynamic> data):
     categoryName = data["category"],
     type = data["type"] == "multiple" ? Type.multiple : Type.boolean,

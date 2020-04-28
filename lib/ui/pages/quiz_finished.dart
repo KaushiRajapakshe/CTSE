@@ -11,6 +11,7 @@ class QuizFinishedPage extends StatelessWidget {
     
   }
 
+  // Quiz finish page
   @override
   Widget build(BuildContext context){
     int correct = 0;

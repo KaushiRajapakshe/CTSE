@@ -1,4 +1,3 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -15,18 +14,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePage extends State<HomePage> {
-  final List<Color> tileColors = [
-    Colors.green,
-    Colors.blue,
-    Colors.purple,
-    Colors.pink,
-    Colors.indigo,
-    Colors.lightBlue,
-    Colors.amber,
-    Colors.deepOrange,
-    Colors.red,
-    Colors.brown
-  ];
   String collectionName = "Categories";
   int length = 0;
   @override
@@ -121,6 +108,7 @@ class _HomePage extends State<HomePage> {
     );
   }
 
+  // press category navigate to Quiz page
   _categoryPressed(BuildContext context, Category category) {
     showModalBottomSheet(
       context: context,
@@ -132,7 +120,7 @@ class _HomePage extends State<HomePage> {
       ),
     );
   }
-
+  // get category length
   int getCategoryLength() {
     int lengthn = 0;
     crud n = new crud();
