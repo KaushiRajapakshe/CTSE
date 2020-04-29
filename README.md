@@ -1,4 +1,17 @@
 # insightquiz
+## Sri Lanka Institute of Information Technology
+
+## Exam in App Final Flutter Project
+
+Current Trends in Software Engineering
+Final Project - (SE4010)
+
+Group ID: 49
+
+Members:
+IT16178700 – Rajapakshe D.I.K
+IT17018760 - M.P.P.Shamil
+
 
 A new Flutter application.
 
