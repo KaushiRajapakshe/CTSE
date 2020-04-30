@@ -6,10 +6,10 @@
 Current Trends in Software Engineering
 Final Project - (SE4010)
 
-Group ID: 49
+Group ID: 48
 
 Members:
-IT16178700 – Rajapakshe D.I.K
+IT16178700 – D.I.K.Rajapakshe
 IT17018760 - M.P.P.Shamil
 
 

@@ -4,6 +4,8 @@ import 'package:flutter_facebook_login/flutter_facebook_login.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert' as JSON;
 
+import '../main_home.dart';
+
 void main() => runApp(fblogin());
 
 class fblogin extends StatefulWidget {
@@ -139,7 +141,11 @@ class _MyAppState extends State<fblogin> {
                             padding: EdgeInsets.only(top: 355),
                             child: MaterialButton(
                               onPressed: () {
-                                /////////////////////
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (_) => MyApp1()),
+                                  );
                               },
                                 color: Color(0xFF6A1B9A),
                               shape: StadiumBorder(),
