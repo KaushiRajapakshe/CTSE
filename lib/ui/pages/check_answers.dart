@@ -1,3 +1,4 @@
+// IT16178700
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:html_unescape/html_unescape.dart';
@@ -5,6 +6,7 @@ import 'package:insightquiz/models/question.dart';
 
 import 'home.dart';
 
+// CheckAnswersPage Stateless Widget implementation
 class CheckAnswersPage extends StatelessWidget {
   final List<Question> questions;
   final Map<int,dynamic> answers;
@@ -53,6 +55,7 @@ class CheckAnswersPage extends StatelessWidget {
         },
       );
     }
+    // crating question object
     Question question = questions[index];
     bool correct = question.correctAnswer == answers[index];
     return Card(

@@ -1,6 +1,8 @@
+// IT16178700
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+// Category model class implementation
 class Category{
   final int id;
   final String name;
@@ -8,6 +10,7 @@ class Category{
   Category(this.id, this.name, {this.icon});
 }
 
+// List of Category class values
 final List<Category> categories = [
   Category(9,"General Knowledge", icon: FontAwesomeIcons.globeAsia),
   Category(17,"Science & Nature", icon: FontAwesomeIcons.microscope),
@@ -17,6 +20,7 @@ final List<Category> categories = [
   Category(27,"Animals", icon: FontAwesomeIcons.dog),
 ];
 
+// Category_Names model class implementation
 class Category_Names{
   String name;
   DocumentReference reference;
@@ -40,6 +44,7 @@ class Category_Names{
   }
 }
 
+// List of Category_Names class values
 List<Category_Names> category_names = [
   Category_Names("General Knowledge"),
   Category_Names("Science & Nature"),

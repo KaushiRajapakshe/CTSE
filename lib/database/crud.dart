@@ -1,6 +1,8 @@
+// IT16178700
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:insightquiz/models/category.dart';
 
+// crud class implementation
 class crud {
   String collectionName = "Categories";
   String collectionList = "Categories_List";
@@ -9,6 +11,8 @@ class crud {
   // update category data
   Firestore databaseReference = Firestore.instance;
 
+  // getCategory function implementation as async for get await
+  // until getting database data
   getCategory(String userName) async {
     Stream<QuerySnapshot> stream = await databaseReference
         .collection(collectionName)

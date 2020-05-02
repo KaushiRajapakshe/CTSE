@@ -1,5 +1,4 @@
-import 'dart:io';
-
+// IT16178700
 import 'package:flutter/material.dart';
 import 'package:avatar_glow/avatar_glow.dart';
 import 'package:insightquiz/database/crud.dart';
@@ -7,11 +6,14 @@ import 'package:insightquiz/ui/pages/home.dart';
 
 import '../delayed_animation.dart';
 import 'first.dart';
+
+// Fourth Stateful Widget implementation
 class Fourth extends StatefulWidget {
   @override
   _Fourth createState() => _Fourth();
 }
 
+// _Fourth implementation
 class _Fourth extends State<Fourth> with SingleTickerProviderStateMixin {
   final int delayedAmount = 500;
   double _scale;
@@ -145,6 +147,7 @@ class _Fourth extends State<Fourth> with SingleTickerProviderStateMixin {
     );
   }
 
+// _animatedButtonUI implementation
   Widget get _animatedButtonUI => Container(
     height: 60,
     width: 270,
@@ -164,10 +167,12 @@ class _Fourth extends State<Fourth> with SingleTickerProviderStateMixin {
     ),
   );
 
+  // _onTapDown implementation
   void _onTapDown(TapDownDetails details) {
     _controller.forward();
   }
 
+  // _onTapUp implementation
   void _onTapUp(TapUpDetails details) {
     _controller.reverse();
   }

@@ -1,7 +1,9 @@
+// IT16178700
 import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+// DelayedAnimation Stateful Widget implementation
 class DelayedAnimation extends StatefulWidget {
   final Widget child;
   final int delay;
@@ -12,6 +14,7 @@ class DelayedAnimation extends StatefulWidget {
   _DelayedAnimationState createState() => _DelayedAnimationState();
 }
 
+// _DelayedAnimationState implementation
 class _DelayedAnimationState extends State<DelayedAnimation>
     with TickerProviderStateMixin {
   AnimationController _controller;
@@ -38,6 +41,7 @@ class _DelayedAnimationState extends State<DelayedAnimation>
     }
   }
 
+  //  dispose controller
   @override
   void dispose() {
     super.dispose();

@@ -1,3 +1,4 @@
+// IT16178700
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -6,6 +7,7 @@ import 'package:insightquiz/database/crud.dart';
 import 'package:insightquiz/models/category.dart';
 import 'package:insightquiz/ui/widgets/quiz_options.dart';
 
+// HomePage Stateful Widget implementation
 class HomePage extends StatefulWidget {
   HomePage() : super();
 
@@ -13,6 +15,7 @@ class HomePage extends StatefulWidget {
   _HomePage createState() => _HomePage();
 }
 
+// _HomePage implementation
 class _HomePage extends State<HomePage> {
   String collectionName = "Categories";
   int length = 0;
@@ -80,6 +83,7 @@ class _HomePage extends State<HomePage> {
         ));
   }
 
+  // _build Category Item implementation
   Widget _buildCategoryItem(BuildContext context, int index) {
     Category category = categories[index];
     return MaterialButton(

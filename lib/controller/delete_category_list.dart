@@ -1,9 +1,11 @@
+// IT16178700
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:insightquiz/models/category.dart';
 import 'package:insightquiz/models/category_list.dart';
 import 'package:insightquiz/ui/pages/home.dart';
 
+// CategoryListDelete Stateful Widget implementation
 class CategoryListDelete extends StatefulWidget {
   final List<Category_List> categoryList = category_list;
 
@@ -13,6 +15,7 @@ class CategoryListDelete extends StatefulWidget {
   }
 }
 
+// _CategoryListDeleteState implementation
 class _CategoryListDeleteState extends State<CategoryListDelete> {
   static List<Category_Names> categoryName = [];
   final List<Category_Names> categoryNameList = category_names;
@@ -71,6 +74,7 @@ class _CategoryListDeleteState extends State<CategoryListDelete> {
   }
 }
 
+// CategoryListDelete Stateful Widget implementation
 class CategoryItemList extends StatefulWidget {
   final Category_List category_list;
 
@@ -84,6 +88,7 @@ class CategoryItemList extends StatefulWidget {
   }
 }
 
+// CategoryItemState implementation
 class CategoryItemState extends State<CategoryItemList> {
   final Category_List category_list;
 

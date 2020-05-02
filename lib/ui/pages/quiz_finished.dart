@@ -1,7 +1,9 @@
+// IT16178700
 import 'package:flutter/material.dart';
 import 'package:insightquiz/models/question.dart';
 import 'check_answers.dart';
 
+// QuizFinishedPage Stateless Widget implementation
 class QuizFinishedPage extends StatelessWidget {
   final List<Question> questions;
   final Map<int, dynamic> answers;

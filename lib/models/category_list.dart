@@ -1,5 +1,7 @@
+// IT16178700
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 // ignore: camel_case_types
+// Category_List model class implementation
 class Category_List{
   final int id;
   final String name;
@@ -9,6 +11,7 @@ class Category_List{
 
 }
 
+// List of Category_List class values
 // ignore: non_constant_identifier_names
 final List<Category_List> category_list = [
   Category_List(9,"General Knowledge", false, icon: FontAwesomeIcons.globeAsia),

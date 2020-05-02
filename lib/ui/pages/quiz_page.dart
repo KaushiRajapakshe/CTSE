@@ -1,3 +1,4 @@
+// IT16178700
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:html_unescape/html_unescape.dart';
@@ -5,6 +6,7 @@ import 'package:insightquiz/models/category.dart';
 import 'package:insightquiz/models/question.dart';
 import 'package:insightquiz/ui/pages/quiz_finished.dart';
 
+// QuizPage Stateful Widget implementation
 class QuizPage extends StatefulWidget {
   final List<Question> questions;
   final Category category;
@@ -15,6 +17,7 @@ class QuizPage extends StatefulWidget {
   _QuizPageState createState() => _QuizPageState();
 }
 
+// _QuizPageState implementation
 class _QuizPageState extends State<QuizPage> {
   final TextStyle _questionStyle = TextStyle(
     fontSize: 18.0,
@@ -110,6 +113,7 @@ class _QuizPageState extends State<QuizPage> {
     );
   }
 
+  // handle without answering click next
   void _nextSubmit() {
     if(_answers[_currentIndex] == null) {
       _key.currentState.showSnackBar(SnackBar(

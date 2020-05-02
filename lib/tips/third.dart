@@ -1,18 +1,19 @@
-import 'dart:io';
-
+// IT16178700
 import 'package:flutter/material.dart';
 import 'package:avatar_glow/avatar_glow.dart';
 import 'package:insightquiz/database/crud.dart';
 import 'package:insightquiz/ui/pages/home.dart';
 
 import '../delayed_animation.dart';
-import 'first.dart';
 import 'fourth.dart';
+
+// Third Stateful Widget implementation
 class Third extends StatefulWidget {
   @override
   _Third createState() => _Third();
 }
 
+// _Third implementation
 class _Third extends State<Third> with SingleTickerProviderStateMixin {
   final int delayedAmount = 500;
   double _scale;
@@ -146,6 +147,7 @@ class _Third extends State<Third> with SingleTickerProviderStateMixin {
     );
   }
 
+// _animatedButtonUI implementation
   Widget get _animatedButtonUI => Container(
     height: 60,
     width: 270,
@@ -165,10 +167,12 @@ class _Third extends State<Third> with SingleTickerProviderStateMixin {
     ),
   );
 
+  // _onTapDown implementation
   void _onTapDown(TapDownDetails details) {
     _controller.forward();
   }
 
+  // _onTapUp implementation
   void _onTapUp(TapUpDetails details) {
     _controller.reverse();
   }

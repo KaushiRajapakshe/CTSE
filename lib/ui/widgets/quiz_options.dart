@@ -1,3 +1,4 @@
+// IT16178700
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:insightquiz/models/category.dart';
@@ -6,7 +7,7 @@ import 'package:insightquiz/resources/api_provider.dart';
 import 'package:insightquiz/ui/pages/error.dart';
 import 'package:insightquiz/ui/pages/quiz_page.dart';
 
-
+// QuizOptionsDialog Stateful Widget implementation
 class QuizOptionsDialog extends StatefulWidget {
   final Category category;
 
@@ -16,6 +17,7 @@ class QuizOptionsDialog extends StatefulWidget {
   _QuizOptionsDialogState createState() => _QuizOptionsDialogState();
 }
 
+// _QuizOptionsDialogState implementation
 class _QuizOptionsDialogState extends State<QuizOptionsDialog> {
   int _noOfQuestions;
   String _difficulty;
@@ -72,18 +74,21 @@ class _QuizOptionsDialogState extends State<QuizOptionsDialog> {
       );
   }
 
+  // select number of question to show implementation
   _selectNumberOfQuestions(int i) {
     setState(() {
       _noOfQuestions = i;
     });
   }
 
+  // select difficulty to questions implementation
   _selectDifficulty(String s) {
     setState(() {
       _difficulty=s;
     });
   }
 
+  // Start question implementation
   void _startQuiz() async {
     setState(() {
       processing=true;

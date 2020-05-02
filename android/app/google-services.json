@@ -8,12 +8,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:808986567999:android:845d0623ad563664f71f8a",
+        "mobilesdk_app_id": "1:808986567999:android:1f21e3bd184da14af71f8a",
         "android_client_info": {
           "package_name": "com.sliit.app.insightquiz"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "808986567999-utqaihhs12qaie2bl264vd1cmanmj4pn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sliit.app.insightquiz",
+            "certificate_hash": "ac4e57dc050a8556efdbe84276941919b640456d"
+          }
+        },
         {
           "client_id": "808986567999-4chgcl9vp9ssvspe36r14n4vp6vrpp4q.apps.googleusercontent.com",
           "client_type": 3

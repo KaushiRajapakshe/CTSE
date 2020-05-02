@@ -1,5 +1,7 @@
+// IT16178700
 import 'package:flutter/material.dart';
 
+// ErrorPage Stateless Widget implementation
 class ErrorPage extends StatelessWidget {
   final String message;
 
